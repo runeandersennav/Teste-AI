@@ -1,43 +1,64 @@
+/* Generelle stiler */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
-header {
-    background-color: #4CAF50;
+header, footer {
+    background-color: #004489;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px 0;
 }
 
-h1, h2, h3 {
-    margin: 0;
-}
-
-section {
+main {
+    max-width: 900px;
+    margin: 0 auto;
     padding: 20px;
-    margin: 10px 0;
+}
+
+/* Seksjonsstil */
+section {
     background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* H2 overskrifter */
+h2 {
+    color: #004489;
+    border-bottom: 2px solid #004489;
+    padding-bottom: 10px;
+}
+
+/* H3 overskrifter */
+h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Liste for erfaring og ferdigheter */
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-ul li {
+li {
     margin-bottom: 10px;
 }
 
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+/* Lenker */
+a {
+    color: #004489;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
