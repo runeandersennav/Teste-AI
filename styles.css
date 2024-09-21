@@ -21,7 +21,32 @@ main {
     padding: 20px;
 }
 
-/* Seksjonsstil */
+/* Om meg seksjon */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Container for bilde og tekst */
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+/* Seksjon stiler */
 section {
     background-color: white;
     padding: 20px;
