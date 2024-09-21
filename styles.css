@@ -24,21 +24,21 @@ main {
 /* Om meg seksjon */
 #about {
     display: flex;
-    align-items: flex-start; /* Juster teksten i forhold til bildet */
+    align-items: flex-start;
     margin-top: 20px;
 }
 
 /* Container for bilde og tekst */
 .about-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center; /* Justerer teksten til høyre for bildet */
 }
 
 .profile-pic {
-    width: 75px; /* Krympet størrelse */
-    height: 75px; /* Krympet størrelse */
-    border-radius: 50%;
-    margin-right: 20px;
+    width: 75px; /* Krympet bildestørrelsen til 75px */
+    height: 75px;
+    border-radius: 50%; /* Gjør bildet rundt */
+    margin-right: 20px; /* Avstand mellom bilde og tekst */
 }
 
 .about-text {
