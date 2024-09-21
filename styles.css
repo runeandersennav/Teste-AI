@@ -32,13 +32,14 @@ main {
 .about-container {
     display: flex;
     align-items: center; /* Justerer teksten til høyre for bildet */
+    flex-wrap: wrap; /* Gjør at elementene kan brytes ned på mindre skjermer */
 }
 
 .profile-pic {
-    width: 150px; /* Økt bildestørrelsen til 150px */
+    width: 150px;
     height: 150px;
-    border-radius: 50%; /* Gjør bildet rundt */
-    margin-right: 20px; /* Avstand mellom bilde og tekst */
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .about-text {
@@ -85,4 +86,41 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    /* På mindre skjermer (som nettbrett), blir bildet og teksten stablet vertikalt */
+    #about {
+        flex-direction: column; /* Bildet og teksten legges under hverandre */
+    }
+
+    .profile-pic {
+        margin-right: 0; /* Fjern marg til høyre når det stables vertikalt */
+        margin-bottom: 20px; /* Legg til avstand under bildet */
+    }
+
+    .about-text {
+        max-width: 100%; /* Tilpass teksten til hele bredden på mindre skjermer */
+    }
+
+    main {
+        padding: 10px; /* Mindre padding på mindre skjermer */
+    }
+}
+
+@media (max-width: 480px) {
+    /* På veldig små skjermer (som mobil), reduser størrelsen på bildet */
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    header, footer {
+        padding: 10px 0; /* Reduser padding i header og footer */
+    }
+
+    main {
+        padding: 10px; /* Mindre padding på mobil */
+    }
 }
