@@ -35,8 +35,8 @@ main {
 }
 
 .profile-pic {
-    width: 100px; /* Krympet bildestørrelsen til 100px */
-    height: 100px;
+    width: 150px; /* Økt bildestørrelsen til 150px */
+    height: 150px;
     border-radius: 50%; /* Gjør bildet rundt */
     margin-right: 20px; /* Avstand mellom bilde og tekst */
 }
