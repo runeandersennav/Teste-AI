@@ -24,20 +24,19 @@ main {
 /* Om meg seksjon */
 #about {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start; /* Juster teksten i forhold til bildet */
     margin-top: 20px;
 }
 
 /* Container for bilde og tekst */
 .about-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 100px; /* Krympet størrelse */
+    height: 100px; /* Krympet størrelse */
     border-radius: 50%;
     margin-right: 20px;
 }
