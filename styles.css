@@ -35,8 +35,8 @@ main {
 }
 
 .profile-pic {
-    width: 25px; /* Krympet størrelse */
-    height: 25px; /* Krympet størrelse */
+    width: 75px; /* Krympet størrelse */
+    height: 75px; /* Krympet størrelse */
     border-radius: 50%;
     margin-right: 20px;
 }
